@@ -30,7 +30,8 @@ constructor(props){
             <div className="Track">
                 <div className="Track-information">
                     <h3>{this.props.track.name}</h3>
-                    <p>{this.props.track.artist} | {this.props.track.album}</p>
+                    {/* Spelling mistake found on this.props.track.arist which was found on the Spotify API */}
+                    <p>{this.props.track.arist} | {this.props.track.album}</p> 
                 </div>
                 {this.renderAction()}
             </div>
